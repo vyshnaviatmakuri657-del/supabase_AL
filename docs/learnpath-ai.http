@@ -1,0 +1,37 @@
+### Health-like check: list subjects
+GET http://localhost:8080/api/subjects
+
+### Demo students
+GET http://localhost:8080/api/students
+
+### Concept list
+GET http://localhost:8080/api/concepts?subjectId=1
+
+### Diagnostic questions (correct answers are not exposed)
+GET http://localhost:8080/api/quiz/diagnostic?subjectId=1
+
+### Submit example answers - replace question IDs if your database differs
+POST http://localhost:8080/api/quiz/submit
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "subjectId": 1,
+  "answers": [
+    { "questionId": 1, "selectedOption": "A" },
+    { "questionId": 2, "selectedOption": "B" },
+    { "questionId": 3, "selectedOption": "B" }
+  ]
+}
+
+### Mastery
+GET http://localhost:8080/api/students/1/mastery?subjectId=1
+
+### Recommendation
+GET http://localhost:8080/api/students/1/recommendations?subjectId=1
+
+### Graph
+GET http://localhost:8080/api/subjects/1/graph?studentId=1
+
+### Progress metrics
+GET http://localhost:8080/api/students/1/progress?subjectId=1

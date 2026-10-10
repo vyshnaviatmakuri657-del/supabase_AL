@@ -1,0 +1,2 @@
+-- Legacy MySQL setup (no longer used). The project now runs on Supabase (PostgreSQL).
+-- See supabase_schema.sql.

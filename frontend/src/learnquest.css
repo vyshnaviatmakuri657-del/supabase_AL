@@ -1,0 +1,2338 @@
+/* =========================================================
+   LEARNPATH AI - COSMIC DARK THEME DESIGN SYSTEM
+   Deep Space Nebula · Glassmorphism · Cyber Neon Accents
+   ========================================================= */
+
+:root {
+  --cosmic-bg-deep: #02040a;
+  --cosmic-bg-surface: #060b1e;
+  --cosmic-card-bg: rgba(13, 20, 44, 0.72);
+  --cosmic-card-border: rgba(255, 255, 255, 0.09);
+  --cosmic-glow-indigo: rgba(99, 102, 241, 0.35);
+  --cosmic-glow-emerald: rgba(16, 185, 129, 0.35);
+  --cosmic-text-primary: #ffffff;
+  --cosmic-text-secondary: #9aa4bf;
+  --cosmic-text-muted: #64748b;
+  --cosmic-accent-primary: #6366f1;
+  --cosmic-accent-cyan: #38bdf8;
+  --cosmic-accent-emerald: #10b981;
+  --cosmic-accent-amber: #f59e0b;
+  --cosmic-accent-rose: #f43f5e;
+}
+
+body {
+  background: var(--cosmic-bg-deep) !important;
+  color: var(--cosmic-text-primary) !important;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Sleek Cosmic Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(4, 7, 18, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 99px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.55);
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.45);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #818cf8 !important;
+  outline-offset: 2px !important;
+}
+
+/* Base App Shell with Radiant Nebula Gradient */
+.app-shell {
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 18% 18%, rgba(55, 95, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 78% 20%, rgba(150, 70, 255, 0.14), transparent 32%),
+    radial-gradient(circle at 45% 85%, rgba(0, 220, 180, 0.09), transparent 35%),
+    linear-gradient(180deg, #010208 0%, #050a1b 50%, #010207 100%) !important;
+  color: var(--cosmic-text-primary) !important;
+}
+
+/* =========================================================
+   SIDEBAR - COSMIC GLASSMORPHISM
+   ========================================================= */
+.sidebar {
+  background: rgba(6, 10, 24, 0.88) !important;
+  border-right: 1px solid var(--cosmic-card-border) !important;
+  backdrop-filter: blur(20px) !important;
+  color: #ffffff !important;
+}
+
+.brand-mark {
+  background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.brand-lockup strong {
+  color: #ffffff !important;
+}
+
+.brand-lockup strong span {
+  color: #818cf8 !important;
+}
+
+.brand-lockup small {
+  color: #717a94 !important;
+}
+
+.workspace-label, .eyebrow {
+  color: #818cf8 !important;
+  letter-spacing: 1.5px;
+}
+
+.nav-button {
+  color: #94a3b8 !important;
+  transition: all 0.18s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #ffffff !important;
+}
+
+.nav-active {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.28), rgba(168, 85, 247, 0.2)) !important;
+  border: 1px solid rgba(99, 102, 241, 0.45) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.25) !important;
+}
+
+.sequential-pill-card {
+  background: rgba(14, 21, 46, 0.6) !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.sequential-pill-card .seq-badge {
+  color: #818cf8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.sequential-pill-card p {
+  color: #8a94af;
+  font-size: 12px;
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
+.profile-row {
+  border-top: 1px solid var(--cosmic-card-border) !important;
+}
+
+.profile-copy strong {
+  color: #ffffff !important;
+}
+
+.profile-copy span {
+  color: #858ca5 !important;
+}
+
+.avatar {
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+}
+
+.profile-signout-btn {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #94a3b8 !important;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.profile-signout-btn:hover {
+  background: rgba(244, 63, 94, 0.15) !important;
+  color: #fb7185 !important;
+  border-color: rgba(244, 63, 94, 0.3) !important;
+}
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+.topbar {
+  background: rgba(6, 10, 24, 0.85) !important;
+  border-bottom: 1px solid var(--cosmic-card-border) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.breadcrumb {
+  color: #858ca5 !important;
+}
+
+.breadcrumb strong {
+  color: #ffffff !important;
+}
+
+.learner-header-chip {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border-radius: 12px;
+  padding: 6px 14px 6px 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.learner-header-chip:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.learner-chip-label {
+  color: #a5b4fc !important;
+}
+
+.learner-chip-name {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   WELCOME BANNER & METRICS
+   ========================================================= */
+.welcome-box {
+  background: var(--cosmic-card-bg) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  padding: 26px 30px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35) !important;
+  margin-bottom: 22px !important;
+}
+
+.welcome-box h1 {
+  color: #ffffff !important;
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  margin-bottom: 8px !important;
+}
+
+.welcome-box p {
+  color: var(--cosmic-text-secondary) !important;
+  font-size: 15px !important;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.metric-card {
+  background: var(--cosmic-card-bg) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 18px !important;
+  padding: 20px 22px 18px !important;
+  backdrop-filter: blur(14px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #6366f1;
+}
+
+.metric-card.metric-blue::before { background: #6366f1; }
+.metric-card.metric-green::before { background: #10b981; }
+.metric-card.metric-purple::before { background: #a855f7; }
+.metric-card.metric-amber::before { background: #f59e0b; }
+
+.metric-label {
+  color: #8a94af !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.metric-value {
+  color: #ffffff !important;
+  font-size: 34px !important;
+  font-weight: 800 !important;
+  margin: 10px 0 4px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.metric-detail {
+  color: #8a94af !important;
+  font-size: 13px !important;
+}
+
+/* =========================================================
+   PANELS & CONTAINERS
+   ========================================================= */
+.panel {
+  background: var(--cosmic-card-bg) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.4) !important;
+  color: #ffffff !important;
+}
+
+.panel h2, .panel h3 {
+  color: #ffffff !important;
+}
+
+.panel-subtitle {
+  color: var(--cosmic-text-secondary) !important;
+}
+
+/* =========================================================
+   PREREQUISITE KNOWLEDGE MAP / FLOWCHART
+   ========================================================= */
+.graph-canvas {
+  background: radial-gradient(circle at 50% 0%, #0d152f 0%, #070b1a 60%, #02040b 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 18px !important;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6), 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Flowchart Nodes in Cosmic Neon */
+.flow-node-compact {
+  border-radius: 14px !important;
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.22s ease !important;
+}
+
+.flow-node-compact.node-mastered {
+  background: rgba(6, 78, 59, 0.8) !important;
+  border: 1.5px solid #10b981 !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.35) !important;
+}
+
+.flow-node-compact.node-mastered:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 0 28px rgba(16, 185, 129, 0.55) !important;
+}
+
+.flow-node-compact.node-active {
+  background: rgba(30, 27, 75, 0.85) !important;
+  border: 1.5px solid #818cf8 !important;
+  box-shadow: 0 0 22px rgba(129, 140, 248, 0.4) !important;
+}
+
+.flow-node-compact.node-active:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 0 30px rgba(129, 140, 248, 0.65) !important;
+}
+
+.flow-node-compact.node-locked {
+  background: rgba(15, 23, 42, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  opacity: 0.65 !important;
+}
+
+.flow-node-compact .node-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.flow-node-compact .node-subtitle {
+  color: #a5b4fc !important;
+}
+
+.flow-node-compact.node-mastered .node-subtitle {
+  color: #6ee7b7 !important;
+}
+
+.flow-node-compact.node-locked .node-subtitle {
+  color: #64748b !important;
+}
+
+.flow-node-compact .icon-mastered {
+  background: rgba(16, 185, 129, 0.2) !important;
+  color: #34d399 !important;
+  border: 1px solid #10b981 !important;
+}
+
+.flow-node-compact .icon-active {
+  background: rgba(99, 102, 241, 0.25) !important;
+  color: #a5b4fc !important;
+  border: 1px solid #818cf8 !important;
+}
+
+.flow-node-compact .icon-locked {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #64748b !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* React Flow Controls in Cosmic Dark */
+.react-flow__controls {
+  background: rgba(14, 21, 46, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-flow__controls-button {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  fill: #e2e8f0 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.legend {
+  color: #9aa4bf !important;
+}
+
+/* =========================================================
+   RECOMMENDATION & LESSON CARDS
+   ========================================================= */
+.recommendation-panel {
+  background: var(--cosmic-card-bg) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+}
+
+.next-step-box {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.next-step-box strong {
+  color: #ffffff;
+}
+
+.next-step-box p {
+  color: #9aa4bf;
+}
+
+.lesson-card, .concept-dialog-card {
+  background: rgba(14, 21, 46, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.2s ease;
+}
+
+.lesson-card:hover, .concept-dialog-card:hover {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.lesson-card-title, .concept-card-name {
+  color: #ffffff !important;
+}
+
+.lesson-card-tagline, .concept-card-stats-text {
+  color: #9aa4bf !important;
+}
+
+.concept-prereq-alert-box {
+  background: rgba(245, 158, 11, 0.1) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  color: #fde68a !important;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+/* =========================================================
+   BUTTONS & CONTROLS
+   ========================================================= */
+.button-primary {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 18px rgba(99, 102, 241, 0.4) !important;
+  color: #ffffff !important;
+}
+
+.button-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4338ca, #6d28d9) !important;
+  box-shadow: 0 0 26px rgba(99, 102, 241, 0.6) !important;
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+
+.button-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12) !important;
+  transform: translateY(-1px);
+}
+
+.button-quiet {
+  background: transparent !important;
+  color: #94a3b8 !important;
+}
+
+.button-quiet:hover:not(:disabled) {
+  color: #ffffff !important;
+}
+
+/* Dropdown */
+.custom-dropdown-btn {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+}
+
+.custom-dropdown-menu {
+  background: rgba(10, 16, 38, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.custom-dropdown-item {
+  color: #e2e8f0 !important;
+}
+
+.custom-dropdown-item:hover {
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   CLEAN COSMIC AUTH PORTAL CARD
+   ========================================================= */
+.auth-portal-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.cosmic-bg-decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cosmic-nebula-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+.cosmic-nebula-glow.glow-1 {
+  width: 450px;
+  height: 450px;
+  left: 15%;
+  top: 15%;
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.cosmic-nebula-glow.glow-2 {
+  width: 400px;
+  height: 400px;
+  right: 15%;
+  bottom: 20%;
+  background: rgba(168, 85, 247, 0.12);
+}
+
+.cosmic-star-dot {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: cosmicTwinkle 3s ease-in-out infinite;
+}
+
+.cosmic-star-dot.star-lg {
+  width: 3px;
+  height: 3px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes cosmicTwinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.3); }
+}
+
+.auth-portal-card {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: rgba(11, 17, 38, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 34px 32px 30px;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55), 0 0 32px rgba(99, 102, 241, 0.15);
+  z-index: 10;
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.auth-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.auth-brand-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.45);
+  color: #fff;
+}
+
+.auth-brand-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.auth-brand-title span {
+  color: #818cf8;
+}
+
+.auth-brand-tagline {
+  margin: 2px 0 0;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #858ca5;
+}
+
+.auth-title-area h3 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.auth-subtitle {
+  margin: 0 0 18px;
+  color: #9aa4bf;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.auth-demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.demo-btn {
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.demo-student {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #7dd3fc;
+}
+
+.demo-student:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.demo-admin {
+  background: rgba(236, 72, 153, 0.12);
+  border: 1px solid rgba(236, 72, 153, 0.35);
+  color: #f472b6;
+}
+
+.demo-admin:hover {
+  background: rgba(236, 72, 153, 0.2);
+  border-color: rgba(236, 72, 153, 0.5);
+}
+
+.auth-error-banner {
+  background: rgba(244, 63, 94, 0.16);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  color: #fca5a5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.auth-form-stack {
+  display: grid;
+  gap: 15px;
+}
+
+.form-field-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #858ca5;
+  margin-bottom: 6px;
+  letter-spacing: 0.4px;
+}
+
+.form-field-group input {
+  width: 100%;
+  padding: 11px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14.5px;
+  box-sizing: border-box;
+  transition: all 0.15s ease;
+}
+
+.form-field-group input:focus {
+  outline: none;
+  border-color: #818cf8;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.3);
+}
+
+.auth-submit-btn {
+  margin-top: 6px;
+  padding: 13px;
+  font-size: 14.5px;
+}
+
+.auth-switch-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #858ca5;
+}
+
+.auth-link-btn {
+  background: transparent;
+  border: none;
+  color: #818cf8;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.auth-link-btn:hover {
+  color: #a5b4fc;
+}
+
+/* =========================================================
+   MODALS IN COSMIC GLASS
+   ========================================================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 4, 11, 0.85);
+  backdrop-filter: blur(14px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content, .modal-card {
+  background: rgba(12, 18, 42, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 20px !important;
+  color: #ffffff !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.modal-content input, .modal-content textarea, .modal-content select {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+.modal-content input:focus, .modal-content textarea:focus, .modal-content select:focus {
+  border-color: #818cf8 !important;
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Toast Message */
+.toast-message {
+  background: rgba(16, 24, 52, 0.95) !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
+  border-radius: 12px;
+}
+
+/* Clean Handles for React Flow */
+.clean-handle {
+  opacity: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: none !important;
+  pointer-events: none !important;
+}
+
+/* =========================================================
+   COSMIC DARK ANALYTICS & KPI CARDS
+   ========================================================= */
+.admin-badge, .visual-badge, .drilldown-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.4px !important;
+  padding: 5px 13px !important;
+  border-radius: 20px !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase !important;
+}
+
+.admin-badge {
+  background: rgba(236, 72, 153, 0.14) !important;
+  color: #f472b6 !important;
+  border: 1px solid rgba(236, 72, 153, 0.35) !important;
+  box-shadow: 0 0 14px rgba(236, 72, 153, 0.2) !important;
+}
+
+.visual-badge {
+  background: rgba(99, 102, 241, 0.16) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(99, 102, 241, 0.38) !important;
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.2) !important;
+}
+
+.drilldown-badge {
+  background: rgba(56, 189, 248, 0.14) !important;
+  color: #7dd3fc !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.2) !important;
+}
+
+.kpi-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)) !important;
+  gap: 16px !important;
+  margin-bottom: 24px !important;
+}
+
+.kpi-card {
+  background: var(--cosmic-card-bg) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 18px !important;
+  padding: 22px 24px 20px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.2s ease !important;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45), 0 0 20px rgba(99, 102, 241, 0.15) !important;
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+}
+
+.kpi-label {
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  color: #858ca5 !important;
+  display: block !important;
+  text-transform: uppercase !important;
+}
+
+.kpi-value {
+  font: 800 36px 'Manrope', sans-serif !important;
+  color: #ffffff !important;
+  margin: 8px 0 3px !important;
+  letter-spacing: -1px !important;
+  text-shadow: 0 0 24px rgba(255, 255, 255, 0.12) !important;
+}
+
+.kpi-sub {
+  font-size: 13px !important;
+  color: #8a94af !important;
+}
+
+.text-indigo { color: #818cf8 !important; text-shadow: 0 0 20px rgba(129, 140, 248, 0.35) !important; }
+.text-emerald { color: #34d399 !important; text-shadow: 0 0 20px rgba(52, 211, 153, 0.35) !important; }
+.text-amber { color: #fbbf24 !important; text-shadow: 0 0 20px rgba(251, 191, 36, 0.35) !important; }
+.text-cyan { color: #38bdf8 !important; text-shadow: 0 0 20px rgba(56, 189, 248, 0.35) !important; }
+
+/* =========================================================
+   COSMIC DARK CHART CARDS & VISUALIZATIONS
+   ========================================================= */
+.chart-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)) !important;
+  gap: 22px !important;
+  margin-bottom: 24px !important;
+}
+
+.chart-card {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  padding: 24px 26px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.chart-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  margin-bottom: 18px !important;
+}
+
+.chart-header h3 {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 4px !important;
+  letter-spacing: -0.3px !important;
+}
+
+.chart-header p, .chart-header .muted.small {
+  font-size: 13.5px !important;
+  color: #858ca5 !important;
+}
+
+.chart-tag {
+  font-size: 10.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  background: rgba(99, 102, 241, 0.16) !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  color: #a5b4fc !important;
+  padding: 5px 12px !important;
+  border-radius: 8px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.2) !important;
+}
+
+.chart-empty {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #717a94 !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+
+.custom-tooltip {
+  background: rgba(9, 14, 34, 0.96) !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(99, 102, 241, 0.25) !important;
+  font-size: 13.5px !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.custom-tooltip strong {
+  display: block !important;
+  font-size: 15px !important;
+  margin-bottom: 6px !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding-bottom: 4px !important;
+}
+
+.custom-tooltip p {
+  margin: 4px 0 !important;
+  color: #a5b4fc !important;
+}
+
+.custom-tooltip p strong {
+  display: inline !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   COSMIC DARK TABLES & DRILLDOWNS
+   ========================================================= */
+.table-card, .student-drilldown-card {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  padding: 24px 26px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.table-header-row, .drilldown-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 20px !important;
+}
+
+.table-header-row h3, .drilldown-header h3 {
+  color: #ffffff !important;
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  margin: 0 0 4px !important;
+}
+
+.responsive-table-wrapper {
+  overflow-x: auto !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: rgba(6, 10, 24, 0.6) !important;
+}
+
+.data-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 14px !important;
+}
+
+.data-table th {
+  text-align: left !important;
+  padding: 14px 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: #858ca5 !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.9px !important;
+}
+
+.data-table td {
+  padding: 15px 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: #e2e8f0 !important;
+  vertical-align: middle !important;
+}
+
+.data-table tr:hover td {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.selected-row td {
+  background: rgba(99, 102, 241, 0.16) !important;
+}
+
+.table-user-cell {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.table-user-cell strong {
+  color: #ffffff !important;
+}
+
+.avatar-small {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: rgba(99, 102, 241, 0.25) !important;
+  border: 1px solid rgba(99, 102, 241, 0.5) !important;
+  color: #c7d2fe !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.score-badge {
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  color: #38bdf8 !important;
+  text-shadow: 0 0 14px rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Cosmic Glow Pills */
+.pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  padding: 5px 12px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  transition: all 0.15s ease !important;
+}
+
+.pill-tests {
+  background: rgba(99, 102, 241, 0.16) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+}
+
+.pill-mastered {
+  background: rgba(16, 185, 129, 0.18) !important;
+  color: #34d399 !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.2) !important;
+}
+
+.pill-neutral {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.pill-retest {
+  background: rgba(245, 158, 11, 0.16) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+}
+
+.pill-initial {
+  background: rgba(56, 189, 248, 0.14) !important;
+  color: #7dd3fc !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+}
+
+.pill-weak {
+  background: rgba(244, 63, 94, 0.16) !important;
+  color: #fca5a5 !important;
+  border: 1px solid rgba(244, 63, 94, 0.38) !important;
+}
+
+/* Drilldown Grid */
+.drilldown-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)) !important;
+  gap: 20px !important;
+  margin-top: 18px !important;
+}
+
+.drilldown-subcard {
+  background: rgba(6, 10, 26, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  padding: 20px 22px !important;
+}
+
+.drilldown-subcard h4 {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  margin: 0 0 14px !important;
+}
+
+.concept-brief-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.concept-brief-item {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 10px 14px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+}
+
+.concept-brief-item strong {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   CURRICULUM MANAGEMENT STUDIO - CYBER GLASS PODS
+   ========================================================= */
+.curriculum-management-view {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 26px !important;
+}
+
+.curriculum-pod-card {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  padding: 26px 28px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.2s ease !important;
+}
+
+.curriculum-pod-card:hover {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55), 0 0 24px rgba(99, 102, 241, 0.12) !important;
+}
+
+.curriculum-pod-card h3 {
+  color: #ffffff !important;
+  font-size: 18.5px !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+}
+
+.curriculum-pod-card small.muted {
+  color: #858ca5 !important;
+  font-size: 13px !important;
+}
+
+.curriculum-pod-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 14px !important;
+  display: grid !important;
+  place-items: center !important;
+  font-size: 22px !important;
+  background: rgba(99, 102, 241, 0.18) !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.25) !important;
+  flex-shrink: 0 !important;
+}
+
+.curriculum-form-group {
+  display: grid !important;
+  gap: 5px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  color: #858ca5 !important;
+  letter-spacing: 0.4px !important;
+}
+
+.curriculum-form-group input,
+.curriculum-form-group textarea,
+.curriculum-form-group select {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  color: #ffffff !important;
+  font-size: 14.5px !important;
+  transition: all 0.15s ease !important;
+}
+
+.curriculum-form-group input:focus,
+.curriculum-form-group textarea:focus,
+.curriculum-form-group select:focus {
+  outline: none !important;
+  border-color: #818cf8 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.35) !important;
+}
+
+.curriculum-form-group textarea {
+  font-family: inherit !important;
+  line-height: 1.5 !important;
+}
+
+.curriculum-code-input {
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace !important;
+  font-size: 13.5px !important;
+  background: rgba(4, 7, 18, 0.8) !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+}
+
+.curriculum-feedback-success {
+  padding: 14px 18px !important;
+  border-radius: 12px !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  color: #6ee7b7 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2) !important;
+}
+
+.curriculum-feedback-error {
+  padding: 14px 18px !important;
+  border-radius: 12px !important;
+  background: rgba(244, 63, 94, 0.15) !important;
+  border: 1px solid rgba(244, 63, 94, 0.4) !important;
+  color: #fca5a5 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.2) !important;
+}
+
+/* =========================================================
+   LEARNING CLASSES & NOTES LIBRARY - COSMIC DARK THEME
+   ========================================================= */
+.classes-library-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  width: 100% !important;
+}
+
+.lesson-top-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 12px !important;
+}
+
+.lesson-badge {
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  background: rgba(99, 102, 241, 0.16) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  padding: 5px 14px !important;
+  border-radius: 20px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.2) !important;
+}
+
+.library-hero-card {
+  background: rgba(13, 20, 48, 0.82) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 22px !important;
+  padding: 30px 34px !important;
+  backdrop-filter: blur(18px) !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.library-hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #38bdf8, #a855f7);
+}
+
+.library-hero-title-group h1 {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 6px 0 10px !important;
+  letter-spacing: -0.5px !important;
+}
+
+.library-hero-desc {
+  color: #9aa4bf !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  max-width: 900px !important;
+}
+
+.library-hero-desc strong {
+  color: #ffffff !important;
+}
+
+.library-hero-desc em {
+  color: #a5b4fc !important;
+  font-style: normal !important;
+}
+
+.library-stats-bar {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  gap: 16px !important;
+  padding-top: 22px !important;
+  margin-top: 20px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.library-stat-card {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 14px !important;
+  padding: 14px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.library-stat-num {
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  font-family: 'Manrope', sans-serif !important;
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.15) !important;
+}
+
+.library-stat-label {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #858ca5 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+}
+
+/* Library Toolbar */
+.library-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 18px !important;
+  padding: 16px 22px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+.library-search-box {
+  position: relative !important;
+  flex: 1 !important;
+  min-width: 260px !important;
+}
+
+.library-search-box input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 11px 16px 11px 40px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 12px !important;
+  font-size: 14.5px !important;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  transition: all 0.2s ease !important;
+}
+
+.library-search-box input:focus {
+  outline: none !important;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: #818cf8 !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.35) !important;
+}
+
+.library-search-icon {
+  position: absolute !important;
+  left: 14px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 15px !important;
+  color: #858ca5 !important;
+  pointer-events: none !important;
+}
+
+.library-filter-group {
+  display: flex !important;
+  gap: 10px !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.library-filter-btn {
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #94a3b8 !important;
+  padding: 9px 16px !important;
+  border-radius: 10px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+}
+
+.library-filter-btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.library-filter-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+  color: #ffffff !important;
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  box-shadow: 0 0 18px rgba(99, 102, 241, 0.45) !important;
+}
+
+/* Concept Section & Dual Grid */
+.library-concept-section {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 22px !important;
+  padding: 24px 28px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+}
+
+.library-concept-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+  padding-bottom: 18px !important;
+  margin-bottom: 22px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.library-concept-title {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.library-dual-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+
+@media (max-width: 900px) {
+  .library-dual-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.library-class-card {
+  border-radius: 18px !important;
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  transition: all 0.22s ease !important;
+  min-height: 260px !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+.library-class-card:hover {
+  transform: translateY(-3px) !important;
+}
+
+/* Class 1 (Core Track) Theme */
+.card-class-core {
+  background: rgba(15, 23, 54, 0.75) !important;
+  border: 1.5px solid rgba(99, 102, 241, 0.3) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+.card-class-core:hover {
+  border-color: #818cf8 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 24px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Class 2 (Remedial Track) Theme */
+.card-class-remedial {
+  background: rgba(30, 24, 16, 0.75) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.3) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+.card-class-remedial:hover {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 24px rgba(245, 158, 11, 0.28) !important;
+}
+
+.library-card-top {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 14px !important;
+  flex-wrap: wrap !important;
+}
+
+.track-tag-core {
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #a5b4fc !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  letter-spacing: 0.5px !important;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.2) !important;
+}
+
+.track-tag-remedial {
+  background: rgba(245, 158, 11, 0.2) !important;
+  color: #fde68a !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  letter-spacing: 0.5px !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2) !important;
+}
+
+.track-focus-label {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #858ca5 !important;
+}
+
+.library-card-title {
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 0 8px !important;
+  line-height: 1.35 !important;
+}
+
+.library-card-tagline {
+  font-size: 14px !important;
+  color: #9aa4bf !important;
+  margin: 0 0 18px !important;
+  line-height: 1.55 !important;
+}
+
+.library-card-features {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-bottom: 22px !important;
+}
+
+.feature-pill-core {
+  font-size: 11.5px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #c7d2fe !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+.feature-pill-remedial {
+  font-size: 11.5px !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  color: #fde68a !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+.library-card-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  margin-top: auto !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.assigned-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  color: #34d399 !important;
+  background: rgba(16, 185, 129, 0.18) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.25) !important;
+}
+
+/* =========================================================
+   ACTIVE LESSON READING & EDIT MODE - COSMIC DARK THEME
+   ========================================================= */
+.lesson-read-container {
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.lesson-article {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 24px !important;
+  padding: 34px 38px !important;
+  backdrop-filter: blur(18px) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.lesson-header-group {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09) !important;
+  padding-bottom: 22px !important;
+  margin-bottom: 28px !important;
+}
+
+.lesson-header-group h1 {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: -0.5px !important;
+}
+
+.lesson-body {
+  color: #cbd5e1 !important;
+  font-size: 16px !important;
+  line-height: 1.85 !important;
+}
+
+.lesson-section-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 32px 0 14px !important;
+  border-left: 4px solid #818cf8 !important;
+  padding-left: 14px !important;
+  letter-spacing: -0.3px !important;
+}
+
+.lesson-paragraph {
+  font-size: 15.5px !important;
+  line-height: 1.85 !important;
+  color: #cbd5e1 !important;
+  margin: 0 0 16px !important;
+}
+
+.lesson-bullet-item {
+  display: flex !important;
+  gap: 12px !important;
+  align-items: baseline !important;
+  margin-bottom: 12px !important;
+  padding-left: 6px !important;
+}
+
+.bullet-marker {
+  color: #818cf8 !important;
+  font-size: 13px !important;
+  text-shadow: 0 0 8px rgba(129, 140, 248, 0.5) !important;
+}
+
+.bullet-text {
+  color: #e2e8f0 !important;
+  font-size: 15.5px !important;
+  line-height: 1.7 !important;
+}
+
+.inline-code {
+  background: rgba(99, 102, 241, 0.16) !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  color: #a5b4fc !important;
+  padding: 2px 7px !important;
+  border-radius: 6px !important;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace !important;
+  font-size: 14px !important;
+}
+
+/* Code Demonstration Box in Cosmic Dark */
+.code-example {
+  margin-top: 30px !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  background: #040714 !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.15) !important;
+}
+
+.code-example-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 10px 18px !important;
+  background: rgba(14, 21, 46, 0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.2px !important;
+  color: #818cf8 !important;
+}
+
+.code-example pre {
+  margin: 0 !important;
+  padding: 20px 22px !important;
+  overflow-x: auto !important;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: #f1f5f9 !important;
+}
+
+.lesson-action-row {
+  display: flex !important;
+  gap: 12px !important;
+  align-items: center !important;
+  margin-top: 32px !important;
+  padding-top: 22px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* =========================================================
+   QUIZ ASSESSMENT PAGE - COSMIC DARK THEME
+   ========================================================= */
+.concept-stepper-panel {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 20px !important;
+  padding: 24px 28px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+}
+
+.stepper-header h2 {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
+
+.concept-stepper-list {
+  display: flex !important;
+  gap: 12px !important;
+  overflow-x: auto !important;
+  padding: 14px 2px 6px !important;
+}
+
+.step-pill {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  padding: 12px 18px !important;
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #858ca5 !important;
+  cursor: pointer !important;
+  min-width: 140px !important;
+  transition: all 0.2s ease !important;
+}
+
+.step-pill:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  transform: translateY(-2px) !important;
+}
+
+.step-pill.step-selected {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.35), rgba(168, 85, 247, 0.25)) !important;
+  border: 1.5px solid #818cf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.35) !important;
+}
+
+.step-pill.step-mastered {
+  border-color: rgba(16, 185, 129, 0.4) !important;
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #34d399 !important;
+}
+
+.step-pill.step-locked {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+.step-name {
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  color: #ffffff !important;
+}
+
+.quiz-intro h1 {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+.quiz-progress-line {
+  color: #858ca5 !important;
+  font-weight: 700 !important;
+}
+
+.question-group {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 22px !important;
+  padding: 30px 34px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.question-group-heading h2 {
+  color: #ffffff !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+}
+
+.question-text {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin-bottom: 14px !important;
+}
+
+.question-text span {
+  color: #818cf8 !important;
+}
+
+.options-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 640px) {
+  .options-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.option-card {
+  min-height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 12px 18px !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-radius: 12px !important;
+  font-size: 14.5px !important;
+  color: #e2e8f0 !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.option-card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(99, 102, 241, 0.45) !important;
+  transform: translateY(-1px) !important;
+}
+
+.option-selected {
+  background: rgba(99, 102, 241, 0.22) !important;
+  border-color: #818cf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.3) !important;
+}
+
+.option-key {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  color: #a5b4fc !important;
+  display: grid !important;
+  place-items: center !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  flex-shrink: 0 !important;
+}
+
+.option-selected .option-key {
+  background: #6366f1 !important;
+  border-color: #818cf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5) !important;
+}
+
+/* Quiz Evaluation Result Panel */
+.result-panel {
+  background: rgba(11, 17, 40, 0.88) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 24px !important;
+  padding: 38px !important;
+  text-align: center !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55) !important;
+  color: #ffffff !important;
+}
+
+.result-panel h1 {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+.big-score {
+  font-size: 64px !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  letter-spacing: -2px !important;
+  text-shadow: 0 0 30px rgba(99, 102, 241, 0.4) !important;
+  margin: 12px 0 16px !important;
+}
+
+.unlock-celebration-card {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1.5px solid rgba(16, 185, 129, 0.4) !important;
+  border-radius: 16px !important;
+  padding: 18px 24px !important;
+  color: #6ee7b7 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.2) !important;
+  text-align: left !important;
+  margin-top: 20px !important;
+}
+
+.unlock-celebration-card strong {
+  color: #ffffff !important;
+  font-size: 16px !important;
+}
+
+.result-concept-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 14px 18px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+.result-concept-row strong {
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   COSMIC PROGRESS BARS & STATUS PILLS
+   ========================================================= */
+.progress-track {
+  height: 8px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 99px !important;
+  overflow: hidden !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+.progress-track.compact {
+  height: 6px !important;
+}
+
+.progress-value {
+  height: 100% !important;
+  border-radius: 99px !important;
+  background: linear-gradient(90deg, #6366f1, #38bdf8) !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.5) !important;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.status-pill {
+  border-radius: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 5px 12px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  backdrop-filter: blur(8px) !important;
+  transition: all 0.15s ease !important;
+}
+
+.status-mastered {
+  background: rgba(16, 185, 129, 0.18) !important;
+  border: 1px solid rgba(16, 185, 129, 0.45) !important;
+  color: #34d399 !important;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.25) !important;
+}
+
+.status-needs_practice {
+  background: rgba(99, 102, 241, 0.18) !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  color: #a5b4fc !important;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.2) !important;
+}
+
+.status-weak {
+  background: rgba(245, 158, 11, 0.18) !important;
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  color: #fbbf24 !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2) !important;
+}
+
+.status-not_assessed {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #94a3b8 !important;
+}
+
+.status-blocked, .status-locked {
+  background: rgba(244, 63, 94, 0.14) !important;
+  border: 1px solid rgba(244, 63, 94, 0.35) !important;
+  color: #fca5a5 !important;
+}
+
+/* =========================================================
+   APP FOOTER, SYNC STATE, AND BANNERS
+   ========================================================= */
+.app-footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
+  margin-top: 36px !important;
+  padding: 20px 4px 10px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #717a94 !important;
+  font-size: 12.5px !important;
+  flex-wrap: wrap !important;
+}
+
+.sync-note {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #858ca5 !important;
+  font-size: 13px !important;
+  padding-bottom: 12px !important;
+}
+
+.sync-spinner {
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid rgba(255, 255, 255, 0.15) !important;
+  border-top-color: #818cf8 !important;
+  border-radius: 50% !important;
+  animation: spin 0.8s linear infinite !important;
+}
+
+.connection-banner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 16px 20px !important;
+  margin-bottom: 22px !important;
+  border: 1px solid rgba(244, 63, 94, 0.4) !important;
+  background: rgba(244, 63, 94, 0.12) !important;
+  color: #fca5a5 !important;
+  border-radius: 14px !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.connection-banner strong {
+  color: #ffffff !important;
+  display: block !important;
+  margin-bottom: 2px !important;
+}
+
+.connection-banner p {
+  margin: 0 !important;
+  color: #fca5a5 !important;
+  font-size: 13.5px !important;
+}
+
+.connection-banner small {
+  color: #f87171 !important;
+  font-size: 12px !important;
+}
+
+/* =========================================================
+   DASHBOARD CONCEPT & LESSON CARDS
+   ========================================================= */
+.concept-dialog-card {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 18px !important;
+  padding: 22px 24px !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  transition: all 0.22s ease !important;
+  color: #ffffff !important;
+}
+
+.concept-dialog-card:hover {
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(99, 102, 241, 0.12) !important;
+}
+
+.concept-card-locked {
+  opacity: 0.65 !important;
+}
+
+.concept-card-unlocked {
+  opacity: 1 !important;
+}
+
+.concept-card-order-tag {
+  background: rgba(99, 102, 241, 0.18) !important;
+  border: 1px solid rgba(99, 102, 241, 0.38) !important;
+  color: #a5b4fc !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.concept-card-name {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+}
+
+.concept-card-stats-text {
+  color: #858ca5 !important;
+  font-size: 13.5px !important;
+}
+
+.lesson-card {
+  background: rgba(11, 17, 40, 0.85) !important;
+  border: 1px solid var(--cosmic-card-border) !important;
+  border-radius: 18px !important;
+  padding: 22px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  transition: all 0.22s ease !important;
+  color: #ffffff !important;
+  min-height: 200px !important;
+}
+
+.lesson-card:hover {
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(99, 102, 241, 0.15) !important;
+}
+
+.lesson-card-assigned {
+  border-color: rgba(16, 185, 129, 0.45) !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2) !important;
+}
+
+.lesson-num-badge {
+  background: rgba(99, 102, 241, 0.18) !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  color: #a5b4fc !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+}
+
+.lesson-concept-tag {
+  color: #858ca5 !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+}
+
+.lesson-card-title {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  margin: 10px 0 6px !important;
+}
+
+.lesson-card-tagline {
+  color: #9aa4bf !important;
+  font-size: 14px !important;
+  margin: 0 0 16px !important;
+  line-height: 1.5 !important;
+}
+
+.lesson-card-footer {
+  display: flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+  margin-top: auto !important;
+}
+
+.card-empty-note {
+  text-align: center !important;
+  padding: 30px !important;
+  color: #717a94 !important;
+}

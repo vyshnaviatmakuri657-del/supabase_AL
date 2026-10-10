@@ -1,0 +1,15 @@
+# Netlify config for LearnPath AI (frontend only).
+# The Spring Boot backend must be hosted elsewhere (see README -> "Deploy").
+[build]
+  base    = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page-app fallback so refreshing / deep links never 404.
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
